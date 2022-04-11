@@ -1,5 +1,6 @@
 import 'package:easyshop/pages/login_page.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'pages/home_page.dart';
 
@@ -14,6 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      //initialRoute: "/home",
+     theme:ThemeData(
+       fontFamily: GoogleFonts.lato().fontFamily,
+       
+     ),
       routes:{
         "/":(context) => LoginPage(),
          "/home":(context) => HomePage(),
